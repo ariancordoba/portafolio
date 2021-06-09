@@ -41,7 +41,7 @@ header .logo {
   font-weight: 700;
   color: #000;
   text-decoration: none;
-  font-size: 32px;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.6s;
@@ -52,7 +52,7 @@ header .logo:hover {
 }
 
 .inicial {
-  color: crimson;
+  color: #6e57e0;
 }
 
 header ul {
@@ -70,7 +70,7 @@ header ul li {
 }
 
 header ul li a {
-  font-size: 1rem;
+  font-size: 1.5rem;
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -79,9 +79,9 @@ header ul li a {
   transition: 0.6s;
 }
 header ul li a:hover {
-  color: crimson;
+  color: #6e57e0;
   transition: 0.3;
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
 }
 
 header.sticky .logo,
@@ -94,45 +94,47 @@ header.sticky .logo {
 }
 
 header.sticky ul li a:hover {
-  color: crimson;
+  color: #6e57e0;
   transition: 0.3;
 }
 
 /* Estilos Home */
 
-.container {
-  display: block;
-  background: url(img/javascript-isometric.svg) no-repeat right;
-  height: 50vh;
-  min-height: 450px;
-  font-size: 3rem;
-  text-align: left;
-  padding: 55px 75px;
-  margin: 120px 0px;
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 40px;
+  margin: 340px 80px;
   color: #000;
   font-family: "Montserrat";
 }
 
 .banner .hola {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 500;
   letter-spacing: -1.5px;
 }
 
 .banner .nombre {
-  font-size: 4rem;
-  color: crimson;
+  font-size: 6rem;
+  color: #6e57e0;
   font-weight: bold;
 }
 
 .banner .profesion {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
+}
+
+.myphoto img {
+  width: 580px;
+  margin-left: 200px;
+  margin-top: -100px;
 }
 
 .typing {
   font-weight: 600;
-  color: crimson;
+  color: #6e57e0;
 }
 
 .cta {
@@ -141,9 +143,9 @@ header.sticky ul li a:hover {
   padding: 5px 25px;
   color: #000;
   /* background-color: transparent; */
-  border: 3px solid crimson;
+  border: 3px solid #6e57e0;
   border-radius: 5px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -154,7 +156,7 @@ header.sticky ul li a:hover {
 
 .cta:hover {
   color: white;
-  background-color: crimson;
+  background-color: #6e57e0;
   transition: 0.6s;
 }
 
@@ -162,12 +164,13 @@ header.sticky ul li a:hover {
 
 .about {
   font-family: "Poppins", sans-serif;
+  margin-top: -250px;
 }
 
 .about .title {
   position: relative;
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 500;
   margin-bottom: 60px;
   padding-bottom: 20px;
@@ -190,9 +193,9 @@ header.sticky ul li a:hover {
   position: absolute;
   bottom: -10px;
   left: 50%;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
-  color: crimson;
+  color: #6e57e0;
   background: #ffffff;
   transform: translateX(-50%);
 }
@@ -222,18 +225,18 @@ header.sticky ul li a:hover {
 }
 
 .about .about-content .right .text {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
 .about .about-content .right .text span {
-  color: crimson;
+  color: #6e57e0;
 }
 
 .about .about-content .right p {
   text-align: justify;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 
 .about .about-content .right a {
@@ -242,17 +245,18 @@ header.sticky ul li a:hover {
   padding: 5px 25px;
   color: #111;
   background-color: transparent;
-  border: 3px solid crimson;
+  border: 3px solid #6e57e0;
   border-radius: 5px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 20px;
+  transition: 0.4s ease;
 }
 
 .about .about-content .right a:hover {
   color: #fff;
-  background: crimson;
+  background: #6e57e0;
   transition: 0.4s ease;
 }
 
@@ -265,7 +269,7 @@ header.sticky ul li a:hover {
 .servicios h2 {
   position: relative;
   text-align: center;
-  font-size: 40px;
+  font-size: 3rem;
   font-weight: 500;
   margin-top: 75px;
   padding-bottom: 20px;
@@ -288,9 +292,9 @@ header.sticky ul li a:hover {
   position: absolute;
   bottom: -10px;
   left: 50%;
-  font-size: 20px;
+  font-size: 25px;
   padding: 5px;
-  color: crimson;
+  color: #6e57e0;
   background: #ffffff;
   transform: translateX(-50%);
 }
@@ -307,6 +311,8 @@ header.sticky ul li a:hover {
 
 .caja {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
   margin-top: 5px;
@@ -314,14 +320,13 @@ header.sticky ul li a:hover {
 
 .caja .card {
   /* position: relative; */
-  width: 320px;
-  height: 440px;
+  width: 340px;
+  height: 480px;
   border-radius: 15px;
   margin: 0 50px;
 }
 
 .caja .card .box {
-  /* display: inline-block; */
   position: absolute;
   top: 20px;
   left: 20px;
@@ -396,43 +401,209 @@ header.sticky ul li a:hover {
   background: #ff568f;
 }
 
-@media (min-width: 1620px) {
+@media (max-width: 1600px) {
   header .logo {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   header ul li a {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .container {
-    padding: 0px 0px;
-    margin: 270px 40px;
+    margin: -150px 0px;
   }
 
   .banner .hola {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 500;
     letter-spacing: -1.5px;
   }
 
   .banner .nombre {
-    font-size: 5rem;
-    color: crimson;
+    font-size: 3.5rem;
+    color: #6e57e0;
     font-weight: bold;
   }
 
   .banner .profesion {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
   }
 
   .typing {
     font-weight: 600;
-    color: crimson;
+    color: #6e57e0;
   }
 
   .cta {
+    font-size: 1.5rem;
+  }
+
+  .myphoto img {
+    width: 400px;
+    margin-left: 120px;
+    margin-top: -200px;
+  }
+}
+
+@media (max-width: 1366px) {
+  header .logo {
     font-size: 2rem;
+  }
+
+  header ul li a {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: -150px 0px;
+  }
+
+  .banner .hola {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+  }
+
+  .banner .nombre {
+    font-size: 3.5rem;
+    color: #6e57e0;
+    font-weight: bold;
+  }
+
+  .banner .profesion {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .typing {
+    font-weight: 600;
+    color: #6e57e0;
+  }
+
+  .cta {
+    font-size: 1.5rem;
+  }
+
+  .myphoto img {
+    width: 400px;
+    margin-left: 120px;
+    margin-top: -200px;
+  }
+}
+
+@media (max-width: 1280px) {
+  header .logo {
+    font-size: 2rem;
+  }
+
+  header ul li a {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: -150px 0px;
+  }
+
+  .banner .hola {
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+  }
+
+  .banner .nombre {
+    font-size: 4rem;
+    color: #6e57e0;
+    font-weight: bold;
+  }
+
+  .banner .profesion {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .typing {
+    font-weight: 600;
+    color: #6e57e0;
+  }
+
+  .cta {
+    font-size: 1.5rem;
+  }
+
+  .myphoto img {
+    width: 400px;
+    margin-left: 120px;
+    margin-top: -200px;
+  }
+
+  .about .title::after {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .about .about-content .right .text {
+    font-size: 2rem;
+  }
+
+  .about .about-content .right p {
+    font-size: 1rem;
+  }
+
+  .about .about-content .right a {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .servicios h2::after {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1024px) {
+  header .logo {
+    font-size: 2rem;
+  }
+
+  header ul li a {
+    font-size: 1rem;
+  }
+
+  .container {
+    margin: -150px 0px;
+  }
+
+  .banner .hola {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+  }
+
+  .banner .nombre {
+    font-size: 3.5rem;
+    color: #6e57e0;
+    font-weight: bold;
+  }
+
+  .banner .profesion {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .typing {
+    font-weight: 600;
+    color: #6e57e0;
+  }
+
+  .cta {
+    font-size: 1.5rem;
+  }
+
+  .myphoto img {
+    width: 400px;
+    margin-left: 120px;
+    margin-top: 150px;
   }
 }
