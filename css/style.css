@@ -12,7 +12,6 @@ html {
 
 body {
   background: #f2f8fc;
-  /* max-width: 1800px; */
 }
 
 /* Estilos Header */
@@ -112,7 +111,7 @@ header {
   transition: 0.3s ease all;
 }
 
-/* Estilos Sobre Mi */
+/* Estilos About */
 
 .about {
   font-family: "Poppins", sans-serif;
@@ -164,7 +163,57 @@ header {
   margin-bottom: 30px;
 }
 
-/* Cards */
+
+/* Estilos Skills */
+
+.skills-container {
+  padding: 50px 300px;
+  margin-bottom: 30px;
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  text-align: initial;
+}
+
+.skills-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  /* border: #000 1px solid; */
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins';
+  transition: .3s ease all;
+}
+
+.skills-data:hover {
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.4);
+  transition: .3s ease all;
+}
+
+.skills-names {
+  display: flex;
+  align-items: center;
+}
+
+.skills-names img {
+  margin-right: 2rem;
+}
+
+.skills-name {
+  font-weight: 600;
+}
+
+.skills-level {
+  font-weight: 600;
+}
+
+
+/* Estilos Cards */
 
 .container-cards {
   display: grid;
@@ -250,7 +299,7 @@ header {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
-  background: #03a9f4;
+  background: #6e57e0;
   margin-top: 15px;
   border-radius: 20px;
   color: #fff;
@@ -263,209 +312,114 @@ header {
   background: #ff568f;
 }
 
-@media (max-width: 1600px) {
-  header .logo {
-    font-size: 2rem;
-  }
+/* Estilos Contact */
 
-  header ul li a {
-    font-size: 1rem;
-  }
-
-  .container {
-    margin: -150px 0px;
-  }
-
-  .banner .hola {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-  }
-
-  .banner .nombre {
-    font-size: 3.5rem;
-    color: #6e57e0;
-    font-weight: bold;
-  }
-
-  .banner .profesion {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .typing {
-    font-weight: 600;
-    color: #6e57e0;
-  }
-
-  .cta {
-    font-size: 1.5rem;
-  }
-
-  .myphoto img {
-    width: 400px;
-    margin-left: 120px;
-    margin-top: -200px;
-  }
+.container-contact {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 50px;
 }
 
-@media (max-width: 1366px) {
-  header .logo {
-    font-size: 2rem;
-  }
-
-  header ul li a {
-    font-size: 1rem;
-  }
-
-  .container {
-    margin: -150px 0px;
-  }
-
-  .banner .hola {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-  }
-
-  .banner .nombre {
-    font-size: 3.5rem;
-    color: #6e57e0;
-    font-weight: bold;
-  }
-
-  .banner .profesion {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .typing {
-    font-weight: 600;
-    color: #6e57e0;
-  }
-
-  .cta {
-    font-size: 1.5rem;
-  }
-
-  .myphoto img {
-    width: 400px;
-    margin-left: 120px;
-    margin-top: -200px;
-  }
+.contact {
+	padding: 60px 0;
 }
 
-@media (max-width: 1280px) {
-  header .logo {
-    font-size: 2rem;
-  }
-
-  header ul li a {
-    font-size: 1rem;
-  }
-
-  .container {
-    margin: -150px 0px;
-  }
-
-  .banner .hola {
-    font-size: 2rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-  }
-
-  .banner .nombre {
-    font-size: 4rem;
-    color: #6e57e0;
-    font-weight: bold;
-  }
-
-  .banner .profesion {
-    font-size: 2rem;
-    font-weight: 400;
-  }
-
-  .typing {
-    font-weight: 600;
-    color: #6e57e0;
-  }
-
-  .cta {
-    font-size: 1.5rem;
-  }
-
-  .myphoto img {
-    width: 400px;
-    margin-left: 120px;
-    margin-top: -200px;
-  }
-
-  .about .title::after {
-    font-size: 20px;
-    padding: 5px;
-  }
-
-  .about .about-content .right .text {
-    font-size: 2rem;
-  }
-
-  .about .about-content .right p {
-    font-size: 1rem;
-  }
-
-  .about .about-content .right a {
-    font-size: 1rem;
-    margin-top: 5px;
-  }
-
-  .servicios h2::after {
-    font-size: 20px;
-    padding: 5px;
-  }
+.contact .titulo {
+	font-size: 34px;
+	line-height: 34px;
+	margin-bottom: 40px;
+	font-weight: 300;
+	color: #3895ea;
+	text-align: center;
 }
 
-@media (max-width: 1024px) {
-  header .logo {
-    font-size: 2rem;
-  }
+.contact .formulario {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 
-  header ul li a {
-    font-size: 1rem;
-  }
+.contact .formulario input[type='text'],
+.contact .formulario input[type='email'],
+.contact .formulario textarea {
+	border: 2px solid #cecece;
+	border-radius: 5px;
+	padding: 15px 20px;
+	font-size: 20px;
+}
 
-  .container {
-    margin: -150px 0px;
-  }
+.contact .formulario input[type='text']:focus,
+.contact .formulario input[type='email']:focus,
+.contact .formulario input textarea:focus {
+	border: 2px solid #3895ea;
+}
 
-  .banner .hola {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -1.5px;
-  }
+.contact .formulario input[type='text'],
+.contact .formulario input[type='email'] {
+	width: 49%;
+	margin-bottom: 15px;
+}
 
-  .banner .nombre {
-    font-size: 3.5rem;
-    color: #6e57e0;
-    font-weight: bold;
-  }
+.contact .formulario textarea {
+	width: 100%;
+	height: 100px;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100px;
+	max-height: 200px;
+	margin-bottom: 15px;
+}
 
-  .banner .profesion {
-    font-size: 2rem;
-    font-weight: 400;
-  }
+.contact .formulario .cta {
+	margin: auto;
+}
 
-  .typing {
-    font-weight: 600;
-    color: #6e57e0;
-  }
+/* Estilos Footer */
 
-  .cta {
-    font-size: 1.5rem;
-  }
+footer .redes-sociales {
+	background: #160f3b;
+	padding: 30px 0;
+  transition: .3s ease all;
+}
 
-  .myphoto img {
-    width: 400px;
-    margin-left: 120px;
-    margin-top: 150px;
-  }
+footer .redes-sociales .contenedor {
+	display: flex;
+	justify-content: center;
+}
+
+footer .redes-sociales a {
+	color: #fff;
+	text-align: center;
+	width: 100px;
+  /* height: 100px; */
+  align-items: center;
+	display: block;
+	padding: 15px 0;
+	font-size: 30px;
+	margin: 20px 0;
+}
+
+footer .redes-sociales .linkedin:hover {
+	background: #0077b5;
+  transition: .3s ease all;
+}
+
+footer .redes-sociales .twitter:hover {
+	background: #1da1f2;
+  transition: .3s ease all;
+}
+
+footer .redes-sociales .github:hover {
+	background: #6e5494;
+  transition: .3s ease all;
+}
+
+footer .redes-sociales .whatsapp:hover {
+	background: #25d366;
+  transition: .3s ease all;
+}
+
+footer .redes-sociales .instagram:hover {
+	background: #e1306c;
+  transition: .3s ease all;
 }

@@ -1,0 +1,42 @@
+window.sr = ScrollReveal();
+
+sr.reveal(".navbar", {
+	duration: 2000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".banner", {
+	duration: 2000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".about", {
+	duration: 2000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".skills-data", {
+	duration: 3000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".caja", {
+	duration: 4000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".contact", {
+	duration: 3000,
+	origin: "bottom",
+	distance: "-100px",
+});
+
+sr.reveal(".redes-sociales", {
+	duration: 3000,
+	distance: "0px",
+});
