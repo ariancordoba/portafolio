@@ -19,26 +19,26 @@ sr.reveal(".about", {
 });
 
 sr.reveal(".skills-data", {
-	duration: 3000,
+	duration: 2000,
 	origin: "bottom",
 	distance: "-100px",
 	interval: 200,
 });
 
 sr.reveal(".caja", {
-	duration: 4000,
+	duration: 2000,
 	origin: "bottom",
 	distance: "-100px",
 	interval: 200,
 });
 
 sr.reveal(".contact", {
-	duration: 3000,
+	duration: 2000,
 	origin: "bottom",
 	distance: "-100px",
 });
 
 sr.reveal(".redes-sociales", {
-	duration: 3000,
+	duration: 2000,
 	distance: "0px",
 });

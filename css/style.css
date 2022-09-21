@@ -31,6 +31,10 @@ header {
   margin-top: -200px;
 }
 
+.logo {
+  font-weight: 600;
+}
+
 .navbar-brand {
   font-size: 20px !important;
 }
@@ -591,7 +595,7 @@ footer .redes-sociales .instagram:hover {
   }
 
   .skills-container {
-    padding: 50px 0px 0px 0px;
+    padding: 50px 15px 0px 15px;
   }
 
   .cta {
