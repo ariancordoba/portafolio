@@ -12,9 +12,15 @@ html {
 
 body {
   background: #f2f8fc;
+  padding-top: 200px;
+  max-width: 100%;
 }
 
 /* Estilos Header */
+
+.navbar .navbar-toggler {
+  box-shadow: none !important;
+}
 
 header {
   position: fixed;
@@ -22,6 +28,7 @@ header {
   height: 78px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   z-index: 1000;
+  margin-top: -200px;
 }
 
 .navbar-brand {
@@ -48,7 +55,7 @@ header {
 
 .nav-link:hover {
   color: #6e57e0 !important;
-  border-bottom: 2px solid #6e57e0;
+  /* border-bottom: 2px solid #6e57e0; */
 }
 
 .inicial {
@@ -58,13 +65,16 @@ header {
 
 /* Estilos Home */
 
+/* main {
+  width: 100%;
+
+} */
 
 .banner {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 200px 300px;
-  grid-gap: 40px;
+  margin-bottom: 100px;
   color: #000;
   font-family: "Montserrat";
 }
@@ -115,8 +125,8 @@ header {
 
 .about {
   font-family: "Poppins", sans-serif;
-  padding: 0px 200px;
-  margin-bottom: 100px;
+  padding: 0px 100px;
+  margin-bottom: 150px;
 }
 
 .title {
@@ -124,6 +134,7 @@ header {
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
+  padding-top: 100px;
 }
 
 .about .about-content {
@@ -167,13 +178,12 @@ header {
 /* Estilos Skills */
 
 .skills-container {
-  padding: 50px 300px;
-  margin-bottom: 30px;
+  padding: 50px 200px 0px 200px;
   display: grid;
   column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  text-align: initial;
+  /* align-items: center; */
+  /* text-align: initial; */
 }
 
 .skills-data {
@@ -216,8 +226,10 @@ header {
 /* Estilos Cards */
 
 .container-cards {
+  /* max-width: 1900px; */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-content: center;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
   padding: 50px 200px;
 }
@@ -228,17 +240,19 @@ header {
   align-items: center;
   font-family: "Poppins", sans-serif;
   border-radius: 10px;
-  margin-top: 5px;
+  margin: 0;
 }
 
-.caja .card {
-  width: 340px;
-  height: 480px;
-  border-radius: 15px;
-}
+  .caja .card {
+    width: 340px;
+    height: 480px;
+    border-radius: 15px;
+  }
 
 .caja .card .box {
   position: absolute;
+  /* width: 340px;
+  height: 480px; */
   top: 20px;
   left: 20px;
   right: 20px;
@@ -315,22 +329,13 @@ header {
 /* Estilos Contact */
 
 .container-contact {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   margin-top: 50px;
 }
 
 .contact {
-	padding: 60px 0;
-}
-
-.contact .titulo {
-	font-size: 34px;
-	line-height: 34px;
-	margin-bottom: 40px;
-	font-weight: 300;
-	color: #3895ea;
-	text-align: center;
+	margin-bottom: 250px;
 }
 
 .contact .formulario {
@@ -376,7 +381,12 @@ header {
 
 /* Estilos Footer */
 
+footer {
+  width: 100%;
+}
+
 footer .redes-sociales {
+  width: 100%;
 	background: #160f3b;
 	padding: 30px 0;
   transition: .3s ease all;
@@ -404,11 +414,6 @@ footer .redes-sociales .linkedin:hover {
   transition: .3s ease all;
 }
 
-footer .redes-sociales .twitter:hover {
-	background: #1da1f2;
-  transition: .3s ease all;
-}
-
 footer .redes-sociales .github:hover {
 	background: #6e5494;
   transition: .3s ease all;
@@ -422,4 +427,199 @@ footer .redes-sociales .whatsapp:hover {
 footer .redes-sociales .instagram:hover {
 	background: #e1306c;
   transition: .3s ease all;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1600px) {
+
+  .container-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 1280px) {
+
+  .banner .hola {
+    font-size: 2.5rem;
+  }
+  
+  .banner .nombre {
+    font-size: 5rem;
+  }
+  
+  .banner .profesion {
+    font-size: 2rem;
+  }
+
+  .myphoto img {
+    width: 400px;
+  }
+
+  .skills-container {
+    padding: 50px 100px 0px 100px;
+  }
+
+  .container-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 100px;
+  }
+
+  .caja .card {
+    width: 400px;
+    height: 520px;
+    border-radius: 15px;
+  }
+
+  .container-contact {
+    max-width: 800px;
+  }
+
+  .contact {
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+
+  .about {
+    padding: 0px 50px;
+  }
+
+  .banner .hola {
+    font-size: 1.5rem;
+  }
+  
+  .banner .nombre {
+    font-size: 3rem;
+  }
+  
+  .banner .profesion {
+    font-size: 1.5rem;
+  }
+
+  .cta {
+    font-size: 18px;
+  }
+
+  .myphoto img {
+    width: 300px;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .container-cards {
+    grid-template-columns: 1fr;
+    padding: 50px 50px;
+  }
+
+  .container-contact {
+    max-width: 600px;
+  }
+
+  .contact .formulario input[type='text'],
+  .contact .formulario input[type='email'] {
+	width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .banner .hola {
+    font-size: 2rem;
+  }
+  
+  .banner .nombre {
+    font-size: 4.5rem;
+  }
+  
+  .banner .profesion {
+    font-size: 2rem;
+  }
+
+  .myphoto img {
+    display: none;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+  }
+
+  .about .about-content .right {
+    width: 100%;
+  }
+
+  .about .about-content .left {
+    width: 100%;
+  }
+
+  .caja .card {
+    width: 340px;
+    height: 480px;
+  }
+  
+  .right {
+    text-align: center;
+  }
+
+  .about .about-content .right p {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 540px) {
+
+  .banner {
+    text-align: center;
+  }
+
+  .banner .hola {
+    font-size: 2rem;
+
+  }
+  
+  .banner .nombre {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  
+  .banner .profesion {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    padding: 50px 0px 0px 0px;
+  }
+
+  .cta {
+    font-size: 16px;
+    padding: 5px 15px;
+    margin-top: 5px;
+  }
+
+  .right .cta {
+    font-size: 16px;
+  }
+
+  .container-contact {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .banner .nombre {
+    font-size: 3rem;
+  }
+
+  .banner .profesion {
+    font-size: 1.5rem;
+  }
+
+  .container-contact {
+    max-width: 300px;
+  }
 }

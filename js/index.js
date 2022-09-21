@@ -22,12 +22,14 @@ sr.reveal(".skills-data", {
 	duration: 3000,
 	origin: "bottom",
 	distance: "-100px",
+	interval: 200,
 });
 
 sr.reveal(".caja", {
 	duration: 4000,
 	origin: "bottom",
 	distance: "-100px",
+	interval: 200,
 });
 
 sr.reveal(".contact", {
