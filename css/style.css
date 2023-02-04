@@ -6,12 +6,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --colorMain: #6e57e0;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: #f2f8fc;
+  background: #fff;
   padding-top: 200px;
   max-width: 100%;
 }
@@ -58,21 +62,12 @@ header {
 }
 
 .nav-link:hover {
-  color: #6e57e0 !important;
+  color: var(--colorMain) !important;
   /* border-bottom: 2px solid #6e57e0; */
-}
-
-.inicial {
-  color: #6e57e0;
 }
 
 
 /* Estilos Home */
-
-/* main {
-  width: 100%;
-
-} */
 
 .banner {
   display: flex;
@@ -91,7 +86,7 @@ header {
 
 .banner .nombre {
   font-size: 6rem;
-  color: #6e57e0;
+  color: var(--colorMain);
   font-weight: bold;
 }
 
@@ -109,7 +104,7 @@ header {
   text-decoration: none;
   padding: 5px 25px;
   color: #000;
-  border: 3px solid #6e57e0;
+  border: 3px solid var(--colorMain);
   border-radius: 5px;
   font-size: 22px;
   font-weight: 600;
@@ -121,7 +116,7 @@ header {
 
 .cta:hover {
   color: white;
-  background-color: #6e57e0;
+  background-color: var(--colorMain);
   transition: 0.3s ease all;
 }
 
@@ -186,8 +181,6 @@ header {
   display: grid;
   column-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
-  /* align-items: center; */
-  /* text-align: initial; */
 }
 
 .skills-data {
@@ -315,7 +308,7 @@ header {
   position: relative;
   display: inline-block;
   padding: 8px 20px;
-  background: #6e57e0;
+  background: var(--colorMain);
   margin-top: 15px;
   border-radius: 20px;
   color: #fff;
@@ -355,12 +348,6 @@ header {
 	font-size: 20px;
 }
 
-.contact .formulario input[type='text']:focus,
-.contact .formulario input[type='email']:focus,
-.contact .formulario input textarea:focus {
-	border: 2px solid #3895ea;
-}
-
 .contact .formulario input[type='text'],
 .contact .formulario input[type='email'] {
 	width: 49%;
@@ -384,7 +371,7 @@ header {
 
 .contact .formulario .cta:hover {
 	margin: auto;
-  background-color: #6e57e0;
+  background-color: var(--colorMain);
 }
 
 /* Estilos Footer */
@@ -444,6 +431,11 @@ footer .redes-sociales .instagram:hover {
   .container-cards {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .container-contact {
+    max-width: 1200px;
+  }
+
 }
 
 @media screen and (max-width: 1280px) {
